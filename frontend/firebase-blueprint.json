@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "Prediction": {
+      "title": "Prediction Result",
+      "description": "Activity recognition result from a CSV upload",
+      "type": "object",
+      "properties": {
+        "activity": { "type": "string" },
+        "confidence": { "type": "number" },
+        "recordCount": { "type": "integer" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "fileName": { "type": "string" }
+      },
+      "required": ["activity", "confidence", "recordCount", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/predictions/{predictionId}": {
+      "schema": "Prediction",
+      "description": "Collection of all HAR predictions made from uploads"
+    }
+  }
+}

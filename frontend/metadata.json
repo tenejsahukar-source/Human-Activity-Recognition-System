@@ -1,0 +1,8 @@
+{
+  "name": "MotionSense AI",
+  "description": "A premium Human Activity Recognition ecosystem for real-time movement prediction and fitness tracking.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
